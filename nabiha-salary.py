@@ -10,3 +10,5 @@ electricity= (electricity_percentage/100)*salary
 
 totalexpenses= savings + rent + electricity
 
+remainder= salary - totalexpenses
+
