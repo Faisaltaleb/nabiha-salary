@@ -14,3 +14,8 @@ remainder= salary - totalexpenses
 
 yearlyrent=rent*12
 yearlyelec=electricity*12
+
+salarysq= salary**2
+
+extra_savings= 50
+savings_division=extra_savings/savings
