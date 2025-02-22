@@ -1,20 +1,20 @@
-months =["january","february","march","april","may","june","july","august","september","october","november","december"]
+months =["1","2","3","4","5","6","7","8","9","10","11","12","january","february","march","april","may","june","july","august","september","october","november","december"]
 salary = float(input("Enter your salary:"))
 while salary < 0 or salary==0 or salary == " ":
     print("Invalid salary")
     salary = float(input("Enter your salary again:"))
-month = input ("Enter the month that yu're storing the salary:").lower()
+month = input ("Enter the month that you're storing the salary:").lower()
 while month not in months:
     print("Invalid month")
     month = input("Enter the month again:").lower()
 
 savings_percentage = float(input("Enter the percentage for savings :"))
-electricity_percentage=float(input("Enter the percentage for rent:"))
+electricity_percentage=float(input("Enter the percentage for electricity:"))
 rent_percentage=float(input("Enter the percentage for the rent:"))
 while savings_percentage < 0 or savings_percentage > 100 or electricity_percentage < 0 or electricity_percentage > 100 or rent_percentage < 0 or rent_percentage > 100:
     print(" Thes iput of the percentages is wrong , please enter them again")
     savings_percentage = float(input("Enter the percentage for savings again:"))
-    electricity_percentage=float(input("Enter the percentage for rent again:"))
+    electricity_percentage=float(input("Enter the percentage for electricity again:"))
     rent_percentage=float(input("Enter the percentage for the rent again:"))
 
 savings = (savings_percentage/100)*salary
